@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp" />
+
+            <EditText
+                android:id="@+id/edittextaddresss"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edit"
+                android:hint="Type here your search address...."
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" />
+        <ImageView
+            android:id="@+id/searchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_search_api_holo_light"
+            android:layout_gravity="end"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"/>
+            <LinearLayout
+                android:id="@+id/locationMarker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/collab_pinmarker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pinmarker"
+                    />
+            </LinearLayout>
+        <Button
+            android:id="@+id/addlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select location"
+            android:layout_gravity="bottom|center"/>
+    </FrameLayout>
+
+</LinearLayout>

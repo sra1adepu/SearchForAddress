@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SearchAdderss</string>
+    <string name="google_api_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCWE_MXoxkIjlJ_zLmjAt17WgDvLmbNcz8</string>
+</resources>
